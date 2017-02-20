@@ -1,0 +1,234 @@
+/* position / height × width / margin / padding / border / background / font*/
+
+body {
+  margin: 0;
+  background: #87a1b2; 
+  font-size: 16px;
+  font-family: helvetica, arial;
+}
+
+/* Calculator is styled here from top to bottom */
+.calculatorApp {
+  position: relative;
+  height: 624px;
+  width: 358px;
+  margin: 0.25em auto;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #045893, #1e435d);
+}
+
+.skin {
+  position: absolute;  
+}
+
+.screenBG {
+  height: 59px;
+  width: 272px;
+  top: 36px;
+  left: 45px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #b2b6b5, #b3b7b9);
+}
+
+.screen {
+  height: 59px;
+  width: 272px;
+  top: 36px;
+  left: 45px;
+  text-align: right;
+  font-size: 2.75em;
+  font-family: "Lucida Console", Monaco, monospace;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.brand {
+  top: 118px;
+  left: 20px;
+  font-size: 1.03em;
+  color: #7ca9be;
+}
+
+.model {
+  top: 106px;
+  left: 210px;
+  letter-spacing: -.11em;
+  font-size: 2.7em;
+  font-weight: bold;
+  font-family: courier;
+  color: #cde9ef;
+}
+
+.solar {
+  height: 49px;
+  width: 155px;
+  top: 148px;
+  left: 21px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #151e19, #313131);
+}
+
+.outline1 {
+  height: 2px;
+  width: 340px;
+  top: 207px;
+  left: 8px;
+  background: #103759;
+}
+
+.outline2 {
+  height: 353px;
+  width: 325px;
+  top: 224px;
+  left: 14px;
+  border: 2px solid #103759;
+  border-radius: 6px;
+}
+
+.operator {
+  position: absolute;
+  height: 41px;
+  width: 59px;
+  padding: 5px 35px 30px 5px;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, rgba(201, 41, 54, 1), #a7252b);
+  font-size: 1em;
+  color: white;
+}
+
+#plusMinus {
+  top: 238px;
+  left: 29px;
+}
+
+#squareRoot {
+  top: 238px;
+  left: 101px;
+}
+
+#percent {
+  top: 238px;
+  left: 173px;
+}
+
+#mrc {
+  top: 295px;
+  left: 29px;
+}
+
+#mMinus {
+  top: 295px;
+  left: 101px;
+}
+
+#mPlus {
+  top: 295px;
+  left: 173px;
+}
+
+#divide {
+  top: 238px;
+  left: 273px;
+}
+
+#multiply {
+  top: 295px;
+  left: 273px;
+}
+
+#subtract {
+  top: 354px;
+  left: 273px;
+}
+
+#add {
+  top: 412px;
+  left: 273px;
+}
+
+#equals {
+  height: 102px;
+  top: 469px;
+  left: 273px;
+  padding: 5px 35px 80px 5px;
+}
+
+.numBtn {
+  position: absolute;
+  height: 42px;
+  width: 65px;
+  padding: 5px 35px 30px 5px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #e7eaef, #cccdce);
+  font-size: 1em;
+  color: #094c90;
+}
+
+#seven {
+  top: 353px;
+  left: 25px;
+}
+
+#eight {
+  top: 353px;
+  left: 98px;
+}
+
+#nine {
+  top: 353px;
+  left: 170px;
+}
+
+#four {
+  top: 411px;
+  left: 25px;
+}
+
+#five {
+  top: 411px;
+  left: 98px;
+}
+
+#six {
+  top: 411px;
+  left: 170px;
+}
+
+#one {
+  left: 25px;
+  top: 469px;
+}
+
+#two {
+  top: 469px;
+  left: 98px;
+}
+
+#three {
+  top: 469px;
+  left: 170px;
+}
+
+#onClear {
+  top: 528px;
+  left: 25px;
+  background: linear-gradient(to bottom, rgba(201, 41, 54, 1), #a7252b);
+}
+
+#zero {
+  top: 528px;
+  left: 98px;
+}
+
+#point {
+  position: absolute;
+  height: 42px;
+  width: 65px;
+  top: 528px;
+  left: 170px;
+  padding: 0px 35px 30px 5px;
+  border-radius: 6px;
+  background: linear-gradient(to bottom, #e7eaef, #cccdce);
+  font-size: 1em;
+  color: #094c90;
+}
