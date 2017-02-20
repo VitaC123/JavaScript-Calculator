@@ -233,17 +233,14 @@ body {
   color: #094c90;
 }
 
-#linkToSource {
+.linkToSource {
   margin: 1em auto;
   text-align: center;
-}
-
-a {
   font-family: menlo, monospace;
   color: #1a82db;
   text-decoration: none;
 }
 
-a:hover {
+.linkToSource:hover {
   text-decoration: underline;
 }
