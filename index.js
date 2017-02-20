@@ -169,4 +169,11 @@
     secondVal = "";
     equationOperator = "";
   }
+
+  $(document).ready(function () {
+  //  $(".sourceLink").css("top", $(".calculatorApp").height());
+    console.log($(".calculatorApp").height(), $(".sourceLink").css("margin-top"));
+  });
+
+
 })();

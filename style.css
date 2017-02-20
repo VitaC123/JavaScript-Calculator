@@ -232,3 +232,18 @@ body {
   font-size: 1em;
   color: #094c90;
 }
+
+#linkToSource {
+  margin: 1em auto;
+  text-align: center;
+}
+
+a {
+  font-family: menlo, monospace;
+  color: #1a82db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
