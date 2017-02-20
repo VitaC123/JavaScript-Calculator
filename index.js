@@ -1,13 +1,13 @@
-(function() {
+(function () {
   "use strict";
 
-  $(".numBtn").click(function() {
+  $(".numBtn").click(function () {
     assignValue(parseInt($(this).html()));
     displayValue();
   });
 
   var operatorsBeforeEqualsClicked = 0; // Used in part to determine progress of equation
-  $(".addSubMultDiv").click(function() {
+  $(".addSubMultDiv").click(function () {
     assignOperator($(this).html());
     operatorsBeforeEqualsClicked++;
     $(".screen").html($(this).html());
@@ -52,7 +52,7 @@
     }
   }
 
-  $("#point").click(function() {
+  $("#point").click(function () {
     var valToCheck = operatorsBeforeEqualsClicked === 0 ? firstVal : secondVal;
     if (valToCheck.indexOf(".") === -1) {
       assignValue(".");
@@ -60,7 +60,7 @@
     }
   });
 
-  $("#equals").click(function() {
+  $("#equals").click(function () {
     var result = solveEquation();
     $(".screen").html(result).hide().slideDown(250);
     limitDisplayLength();
@@ -91,7 +91,7 @@
     }
   }
 
-  $("#plusMinus").click(function() {
+  $("#plusMinus").click(function () {
     if (operatorsBeforeEqualsClicked === 0) {
       firstVal = negativize(firstVal);
     } else {
@@ -111,7 +111,7 @@
     }
   }
 
-  $("#percent").click(function() {
+  $("#percent").click(function () {
     if (operatorsBeforeEqualsClicked === 0) {
       firstVal = firstVal / 100;
     } else {
@@ -121,7 +121,7 @@
   });
 
   var mrc = "";
-  $("#mrc").click(function() {
+  $("#mrc").click(function () {
     if (typeof mrc === "number") {
       $(".screen").html(mrc).hide().slideDown(250);
       clearFirstSecondValuesAndEquationOperator();
@@ -133,31 +133,31 @@
     limitDisplayLength();
   });
 
-  $("#mMinus").click(function() {
+  $("#mMinus").click(function () {
     if (typeof mrc !== "number") {
       mrc = 0;
     }
     var valToStore = operatorsBeforeEqualsClicked === 0 ? firstVal : secondVal;
     mrc -= parseFloat(valToStore);
-    $(".screen").fadeOut("slow", function() {
+    $(".screen").fadeOut("slow", function () {
       $(this).html("").show();
     });
     clearFirstSecondValuesAndEquationOperator();
   });
 
-  $("#mPlus").click(function() {
+  $("#mPlus").click(function () {
     if (typeof mrc !== "number") {
       mrc = 0;
     }
     var valToStore = operatorsBeforeEqualsClicked === 0 ? firstVal : secondVal;
     mrc += parseFloat(valToStore);
-    $(".screen").fadeOut("slow", function() {
+    $(".screen").fadeOut("slow", function () {
       $(this).html("").show();
     });
     clearFirstSecondValuesAndEquationOperator();
   });
 
-  $("#onClear").click(function() {
+  $("#onClear").click(function () {
     clearFirstSecondValuesAndEquationOperator();
     $(".screen").html("");
     operatorsBeforeEqualsClicked = 0;
